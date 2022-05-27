@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATTO STUDIO</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>TATTOO STUDIO</h2>
+                </div>
+
+                <nav>
+                    <ul id="menuitem">
+                        <li class="active"> <a href="#">INICIO</a> </li>
+                        <li> <a href="#">GALERIA</a></li>
+                        <li> <a href="#">SERVIÇOS</a></li>
+                        <li> <a href="#">SOBRE</a></li>
+                        <li> <a href="#">CONTATOS</a></li>
+                        <i class="fa fa-search"></i>
+                    </ul>
+                </nav>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+
+        
+            <div class="home flex">
+                <div class="left">
+                    <h2>Melhores Tattos</h2>
+                    <p> {...} é o Melhor Estúdio de Tatuagem GEEK de Volta Redonda, possui design sofisticado e aconchegante, inspirado em lofts londrinos, o espaço conta com bar, além de um charmoso barber shop, perfeito para dar aquele trato no visual.</p>
+                    <button>Saiba mais</button>
+                    <div class="dots flex">
+                        <label></label>
+                        <label></label>
+                        <label></label>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="img">
+                        <img src="./imagens/h.png" alt="">
+                    </div>
+                </div>
+            </div>  
+        </div>      
+    </header>
+
+    
+    <script>
+    var menuitem = document.getElementById("menuitem");
+        menuitem.style.maxHeight = "0px";
+        function menutoggle(){
+            if(menuitem.style.maxHeight == '0px'){
+                menuitem.style.maxHeight = "200px";
+            }
+            else{
+                menuitem.style.maxHeight = "0px";
+            }
+        }
+
+     /*window.addEventListener("scroll", function(){
+     var header = document.querySelector("header");
+    header.classList.toggle("sticky",window.scrollY>0);
+    })*/  
+
+    </script>
+
+</body>
+</html>
