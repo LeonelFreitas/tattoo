@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-* {
+*{
     padding:0;
     margin:0;
     box-sizing:border-box;
@@ -21,8 +21,8 @@ html{
 }
 
 a{
-    text-decoration: nome;
-    transition: 0.5;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
 header{
@@ -33,7 +33,7 @@ header{
 
 h2{
     margin-top: 20px;
-    font-family:'Pacifico', cursive;
+    font-family: Montserrat;
     font-style: italic;
     font-weight: 100;
 }
@@ -80,7 +80,7 @@ header nav i:hover{
     color:#0e6c66;
 }
 
-header nav li:hover{
+header nav ul li:hover{
     background:#0e6c66;
     padding: 5px 10px;
     border-radius: 5px;
@@ -111,6 +111,11 @@ header .navbar span{
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    header nav ul li a{
+        color: white;
+    }
+
     header .navbar span{
         color: white;
         display: block;
@@ -123,7 +128,8 @@ header .navbar span{
     flex-direction: row;
 }
 
- .left,.right{
+ .left,
+ .right{
     width: 50%;
 }
 
@@ -143,8 +149,8 @@ button{
 
 button:hover{
     border:1px solid #0e6c66;
-    color:#0e6c66;
     background: none;
+    color:#0e6c66;
 }
 
 img{
@@ -152,7 +158,7 @@ img{
     height: 100%;
 }
 
-.home flex{
+.home{
     margin-top: 50px;
     place-items: center;
 }
@@ -186,3 +192,37 @@ img{
     cursor:pointer; 
 }
 
+.dots label:hover{
+    background: red;
+}
+
+.dots label:nth-child(2){
+    background: red;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    grid-column-gap:40px;
+}
+
+.about{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about .item{
+    margin-top: 50px;
+}
+
+.about .item h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about .item svg{
+    width: 80px;
+    height: 80px;
+}
