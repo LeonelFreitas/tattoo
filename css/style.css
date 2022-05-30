@@ -31,11 +31,19 @@ header{
     height: 100vh;
 }
 
+h1{
+    margin-bottom: 40px;
+    font-family:'Pacifico', cursive;
+    font-style:italic;
+    font-weight:110;
+    font-size:35px;
+}
+
 h2{
     margin-top: 20px;
-    font-family: Montserrat;
-    font-style: italic;
-    font-weight: 100;
+    font-family:'Pacifico', cursive;
+    font-style:italic;
+    font-weight:100;
 }
 
 header .navbar{
@@ -123,6 +131,9 @@ header .navbar span{
     }
 }
 
+/*----------header--------*/
+/*----------home--------*/
+
 .flex{
     display: flex;
     flex-direction: row;
@@ -178,33 +189,36 @@ img{
     height: auto;
 }
 
-.dots{
+.pontos{
     margin-top: 20%;
     justify-content: center;
 }
 
-.dots label{
+.pontos label{
     padding: 5px;
     margin-right: 10px;
     border-radius: 50%;
     background: white;
-    transition: 0.5s;
+    transition: 0.8s;
     cursor:pointer; 
 }
 
-.dots label:hover{
-    background: red;
+.pontos label:hover{
+    background: #0e6c66;
 }
 
-.dots label:nth-child(2){
-    background: red;
+.pontos label:nth-child(2){
+    background:#0e6c66;
 }
+
+/*----------home--------*/
+/*----------about--------*/
 
 .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap:20px;
     grid-column-gap:40px;
+    grid-row-gap:20px; 
 }
 
 .about{
@@ -213,7 +227,7 @@ img{
 }
 
 .about .item{
-    margin-top: 50px;
+    margin-top: 2px;
 }
 
 .about .item h2{
@@ -226,3 +240,40 @@ img{
     width: 80px;
     height: 80px;
 }
+
+.about .item p{
+    opacity: 0.8;
+    margin-top: -90px;
+    padding:80px;
+}
+
+.about .conteudo{
+    text-align: left;
+    margin-top: px;
+    
+}
+
+.about .conteudo .left{
+    width: 30%;
+    margin-right: 50px;
+}
+
+.about .conteudo .right{
+    margin-top: 5%;
+    padding: 20px;
+}
+
+.about .conteudo h2{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.about .conteudo p{
+    margin-bottom: 20px;
+    font-size: larger;
+    opacity: 0.9;
+}
+
+/*---- galeria------*/
+
