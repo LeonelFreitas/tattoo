@@ -16,7 +16,7 @@ html{
 }
 
 .container{
-    max-width: 80%;
+    max-width:80%;
     margin: auto;
 }
 
@@ -47,9 +47,9 @@ h2{
 }
 
 header .navbar{
-    display: flex;
+    display:flex;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
 }
 
 header a{
@@ -102,6 +102,8 @@ header .navbar span{
     display:none;
 }
 
+
+
 @media only screen and (max-width:768px){
     header nav ul{
         position: absolute;
@@ -135,7 +137,7 @@ header .navbar span{
 /*----------home--------*/
 
 .flex{
-    display: flex;
+    display:flex;
     flex-direction: row;
 }
 
@@ -212,7 +214,7 @@ img{
 }
 
 /*----------home--------*/
-/*----------about--------*/
+/*----------sobre--------*/
 
 .grid{
     display: grid;
@@ -221,55 +223,55 @@ img{
     grid-row-gap:20px; 
 }
 
-.about{
+.sobre{
     text-align: center;
     margin-top: 100px;
 }
 
-.about .item{
+.sobre .item{
     margin-top: 2px;
 }
 
-.about .item h2{
+.sobre .item h2{
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.about .item svg{
+.sobre .item svg{
     width: 80px;
     height: 80px;
 }
 
-.about .item p{
+.sobre .item p{
     opacity: 0.8;
     margin-top: -90px;
     padding:80px;
 }
 
-.about .conteudo{
+.sobre .conteudo{
     text-align: left;
     margin-top: px;
     
 }
 
-.about .conteudo .left{
+.sobre .conteudo .left{
     width: 30%;
     margin-right: 50px;
 }
 
-.about .conteudo .right{
+.sobre .conteudo .right{
     margin-top: 5%;
     padding: 20px;
 }
 
-.about .conteudo h2{
+.sobre .conteudo h2{
     font-size: 40px;
     font-weight: 100;
     margin-bottom: 20px;
 }
 
-.about .conteudo p{
+.sobre .conteudo p{
     margin-bottom: 20px;
     font-size: larger;
     opacity: 0.9;
@@ -361,10 +363,10 @@ img{
 
 .cliente .para{
     background-color: #212121;
-    color: white;
-    padding: 20px;
+    color:white;
+    padding:20px;
     position:relative;
-    margin-bottom: 50px;
+    margin-bottom:50px;
 }
 
 .cliente .para::after{
@@ -474,7 +476,11 @@ footer iframe{
     height: auto;
     margin-top: 70px;
 }
-
+.y{
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+}
 .legal{
     padding: 20px;
     text-align: center;
@@ -497,25 +503,22 @@ footer iframe{
         grid-column-gap:40px;
     }    
 
-    .dots{
+    .pontos{
         margin-bottom: 20px;
     }
 
     .home .right img{
         width: 100%;
         height: 100%;
+        padding: 1;
     }
 
-    .about img{
-        margin-top: 70px;
+    .sobre img{
+        /* margin-top: 80px; */
+        display: none;
     }
 
     footer .grid, .cliente .grid{
         grid-template-columns: repeat(1,1fr);
     }
-
-    legal{
-        display: auto;
-    }
-
 }   
