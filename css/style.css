@@ -484,9 +484,9 @@ footer iframe{
     color:#0e6c66;
 }
 
-@media only screen and(max-width:768px){
+@media only screen and (max-width:768px){
     
-    header {
+    header{
         height: auto;
     }
 
@@ -512,6 +512,10 @@ footer iframe{
 
     footer .grid, .cliente .grid{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    legal{
+        display: auto;
     }
 
 }   
