@@ -6,8 +6,9 @@
     margin:0;
     box-sizing:border-box;
 }
-
+slee
 body{
+    height: 100%;
     font-family:'Open Sans', sans-serif;
 }
 
@@ -28,7 +29,7 @@ a{
 header{
     background: #212121;
     color: white;
-    height: 100vh;
+    height:100vh;
 }
 
 h1{
@@ -41,7 +42,7 @@ h1{
 
 h2{
     margin-top: 20px;
-    font-family:'Pacifico', cursive;
+    font-family:cursive;
     font-style:italic;
     font-weight:100;
 }
@@ -220,12 +221,18 @@ img{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap:40px;
-    grid-row-gap:20px; 
+    grid-row-gap:20px;
 }
 
 .sobre{
+    height:100vh;
     text-align: center;
     margin-top: 100px;
+}
+
+.sobre h1{
+    margin-bottom: 6%;
+    margin-top: -2%;
 }
 
 .sobre .item{
@@ -282,14 +289,27 @@ img{
 .galeria{
     text-align: center;
     margin-top: 100px;
+    background-color: #212121;
+}
+.galeria p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: -15px;
 }
 
 .galeria h2{
-    font-size: 40px;
+    padding: 30px;
+    font-size:40px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
 .galeria .image{
-    margin-top: 50px;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 20px;
     display: grid;
     grid-template-columns:repeat(8,1fr);
     grid-template-rows: repeat(8,8vw);
@@ -347,6 +367,7 @@ img{
 /*--------Cliente-----------*/
 
 .cliente{
+    height: 30vh;
     margin-top: 100px;
 
 }
@@ -403,7 +424,7 @@ img{
 footer{
     margin-top: 100px;
     background: #212121;
-    color:white;
+    color:grey;
 }
 
 footer .left{
@@ -495,8 +516,7 @@ footer iframe{
     header{
         height: auto;
     }
-
-
+   
     .grid{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -513,12 +533,24 @@ footer iframe{
         padding: 1;
     }
 
+    .sobre{
+        height:100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+
     .sobre img{
         /* margin-top: 80px; */
         display: none;
     }
 
+    .cliente{
+        height:100%;
+        margin-top: 100px;
+    
+    }
+
     footer .grid, .cliente .grid{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns:repeat(1,3fr);
     }
 }   
